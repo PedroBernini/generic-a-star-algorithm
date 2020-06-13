@@ -76,7 +76,7 @@ def expandir(estadoAtual, listaAberta, listaFechada):
 
 # Retorna a lista aberta com todos os novos nós expandidos (atribuído dos valores)
 def preencherListaAberta(listaExpansao, estadoInicial, estadoFinal, estadoAtual, listaAberta, listaFechada, funcaoHeuristica):
-    for X in listaExpansao:
+    for estado in listaExpansao:
         custo_G = getCusto(estadoInicial, estadoAtual, listaFechada, listaAberta) + 1
         heuristica_H = funcaoHeuristica(estado, estadoFinal)
         total_F = custo_G + heuristica_H
@@ -84,3 +84,8 @@ def preencherListaAberta(listaExpansao, estadoInicial, estadoFinal, estadoAtual,
         listaAberta.append(novo_no)
     return listaAberta
 
+def getAllAdjacents(estado):
+    ''' -> TODO
+    A partir de um estado, retorne uma lista de estados adjacentes de acordo com as regras do ambiente
+    '''
+    raise Exception('Falta implementação da funcionalidade "getAllAdjacents"!')

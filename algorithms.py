@@ -4,7 +4,7 @@ from utilities import *
 def aStar(estadoInicial, estadoFinal, heuristica):
 
     # O algoritmo deve começar pelo estado inicial
-    estadoAtual = list(estadoInicial)
+    estadoAtual = estadoInicial
 
     # Listas para os nós da árvore
     listaFechada = []
