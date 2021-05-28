@@ -1,2 +1,2 @@
-# generic-a-star-algorithm
-Generic Algorithm for Heuristic Search
+# Algoritmo Genérico A*
+Algoritmo genérico em A* para problemas de buscas heurísticas
